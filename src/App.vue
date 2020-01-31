@@ -1,15 +1,20 @@
 <template>
   <v-app>
-    <home></home>
+    <barra-principal />
+    <menu-lateral />
+    <v-content>
+      <router-view />
+    </v-content>
   </v-app>
 </template>
 
 <script>
-import Home from "./views/Home";
-
+import BarraPrincipal from "./components/BarraPrincipal";
+import MenuLateral from "./components/MenuLateral";
 export default {
   components: {
-    Home
+    BarraPrincipal,
+    MenuLateral
   },
 
   data: () => ({
