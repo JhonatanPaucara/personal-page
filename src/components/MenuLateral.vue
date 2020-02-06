@@ -40,6 +40,11 @@ export default {
           name: "Experiencia",
           icon: "mdi-briefcase-outline",
           path: "/experience"
+        },
+        {
+          name: "Investigación",
+          icon: "mdi-file-document-box-search-outline",
+          path: "/investigation"
         }
       ]
     };

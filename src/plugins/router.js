@@ -6,6 +6,7 @@ Vue.use(VueRouter);
 import Home from "../views/Home";
 import Studies from "../views/Studies";
 import Experience from "../views/Experience";
+import Investigation from "../views/Investigation";
 
 const routes = [
   {
@@ -19,6 +20,10 @@ const routes = [
   {
     path: "/experience",
     component: Experience
+  },
+  {
+    path: "/investigation",
+    component: Investigation
   }
 ];
 
