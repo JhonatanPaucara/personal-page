@@ -20,9 +20,19 @@
                   </span>
                 </v-card-text>
                 <v-card-actions>
-                  <v-btn color="orange" to="/studies" text>Estudios</v-btn>
-                  <v-btn color="orange" to="/experience" text>Experiencia Laboral</v-btn>
-                  <v-btn color="orange" to="/investigation" text>Publicaciones</v-btn>
+                  <v-layout wrap align-center>
+                    <v-flex xs6 sm4>
+                      <v-btn color="orange" to="/studies" text>Estudios</v-btn>
+                    </v-flex>
+                    <v-flex xs6 sm4>
+                      <v-btn color="orange" to="/experience" text>Experiencia</v-btn>
+                    </v-flex>
+                    <v-flex xs6 sm4>
+                      <v-btn color="orange" to="/investigation" text>Publicaciones</v-btn>
+                    </v-flex>
+                  </v-layout>
+
+                  
                 </v-card-actions>
               </v-flex>
             </v-layout>
@@ -38,12 +48,12 @@
           </v-card-title>
           <v-container>
             <v-layout wrap align-center>
-              <v-flex xs4 sm6>
+              <v-flex xs4 sm5 md6>
                 <ul>
                   <li>Español: Nativo</li>
                 </ul>
               </v-flex>
-              <v-flex xs8 sm6>
+              <v-flex xs8 sm7 md6>
                 <ul>
                   <li>Ingles: Intermedio - Avanzado</li>
                 </ul>
@@ -61,7 +71,7 @@
           </v-card-title>
           <v-container>
             <v-layout wrap align-center>
-              <v-flex xs4 sm3 md2 v-for="(habilidad,index) in habilidades" :key="index">
+              <v-flex xs6 sm4 md3 lg2 v-for="(habilidad,index) in habilidades" :key="index">
                 <ul>
                   <li>{{habilidad}}</li>
                 </ul>
