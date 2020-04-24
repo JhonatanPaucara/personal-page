@@ -43,7 +43,7 @@ export default {
         },
         {
           name: "Investigación",
-          icon: "mdi-file-document-box-search-outline",
+          icon: "mdi-file-document-edit-outline",
           path: "/investigation"
         }
       ]
